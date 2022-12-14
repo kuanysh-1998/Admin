@@ -10,7 +10,7 @@ export const PostList = (props) => (
             <TextField source="model" />
             <TextField source="file" />
             <TextField source="program" />
-            <TextInput source="Comment" />
+            <TextField source="Comment" />
         </Datagrid>
     </List>
 );
