@@ -1,4 +1,4 @@
-import { List, Datagrid, TextField, Edit, SimpleForm, TextInput} from 'react-admin';
+import { List, Datagrid, TextField, Edit, SimpleForm, TextInput, Create} from 'react-admin';
 import BookIcon from '@mui/icons-material/Book';
 export const PostIcon = BookIcon;
 
@@ -10,6 +10,7 @@ export const PostList = (props) => (
             <TextField source="model" />
             <TextField source="file" />
             <TextField source="program" />
+            <TextField source="Comment" />
         </Datagrid>
     </List>
 );
@@ -20,8 +21,22 @@ export const PostEdit = props => (
             <TextInput disabled source="id" />
             <TextInput source="imei" />
             <TextInput source="model" />
-            <TextInput multiline source="file" />
+            <TextInput source="file" />
             <TextInput source="program" />
+            <TextField source="Comment" />
         </SimpleForm>
     </Edit>
+);
+
+export const PostCreate = props => (
+    <Create {...props}>
+        <SimpleForm>
+        <TextInput source="id" />
+            <TextInput source="imei" />
+            <TextInput source="model" />
+            <TextInput source="file" />
+            <TextInput source="program" />
+            <TextField source="Comment" />
+        </SimpleForm>
+    </Create>
 );
