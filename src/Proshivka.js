@@ -10,7 +10,7 @@ export const PostList = (props) => (
             <TextField source="model" />
             <TextField source="file" />
             <TextField source="program" />
-            <TextField source="Comment" />
+            <TextInput source="Comment" />
         </Datagrid>
     </List>
 );
@@ -23,7 +23,7 @@ export const PostEdit = props => (
             <TextInput source="model" />
             <TextInput source="file" />
             <TextInput source="program" />
-            <TextField source="Comment" />
+            <TextInput source="Comment" />
         </SimpleForm>
     </Edit>
 );
@@ -36,7 +36,7 @@ export const PostCreate = props => (
             <TextInput source="model" />
             <TextInput source="file" />
             <TextInput source="program" />
-            <TextField source="Comment" />
+            <TextInput source="Comment" />
         </SimpleForm>
     </Create>
 );
